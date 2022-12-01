@@ -37,6 +37,10 @@ body{
   padding:0 15px;
 }
 
+.group{
+  float:left;
+}
+
 .group1{
   background-color: violet;
   width:250px;
