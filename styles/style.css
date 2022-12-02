@@ -31,10 +31,12 @@ body{
 /* 메인 */
 .main{
   background:lightgreen;
-  border:1px solid red;
-  height:50vh; 
-  display:flow-root;
-  padding:0 15px;
+  min-height:450px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding:30px;
 }
 
 .group{
@@ -44,6 +46,7 @@ body{
 .group1{
   background-color: violet;
   width:250px;
+  flex-shrink:2;
 }
 .group2{
   background-color: salmon;
