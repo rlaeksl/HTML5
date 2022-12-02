@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+
 /* 기본 스타일 */
 *, *::before, *::after{
   box-sizing:border-box;
@@ -7,7 +8,7 @@
 
 /*  */
 body{
-  background-color: #ffc;
+  background-color: #ccc;
   margin: 0;
   padding: 0;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -19,10 +20,26 @@ body{
 }
 /* 헤더 */
 .header{
-  background:pink;  
-  height:15vh;
+  background:#fff;    
   padding:0 30px;
-}   
+  height:15vh;
+  border-radius: 0 0 15px 15px;
+  position:relative;
+}
+
+/* 로고 */
+.logo{
+  position:absolute;
+  top: 45px;
+  left:60px;
+}
+
+/* 텍스트 링크 모음 */
+.member{
+  background-color:aqua;
+}
+
+
 /* 비주얼 */
 .visual{
   background:orange;
@@ -58,6 +75,7 @@ body{
 .slogan{
   background:skyblue;
   height:10vh;
+  clear:both;
 }
 /* 푸터 */
 .footer{
