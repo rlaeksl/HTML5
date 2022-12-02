@@ -31,7 +31,6 @@ body{
 /* 메인 */
 .main{
   background:lightgreen;
-  border:1px solid red;
   height:50vh; 
   display:flow-root;
   padding:0 15px;
@@ -39,6 +38,7 @@ body{
 
 .group{
   float:left;
+  margin: 0 15px;
 }
 
 .group1{
