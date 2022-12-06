@@ -29,7 +29,7 @@ a{
 body{
   font-size:1.4rem;
   color:#212121;
-  background:#ccc linear-gradient(to bottom, #ccc 0% #eee 35%, #fff 70%, #fff 100%);
+  background:#ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -38,6 +38,7 @@ body{
   width:940px;
   margin:0 auto;
 }
+
 /* 헤더 */
 .header{
   background:#fff;    
@@ -90,6 +91,7 @@ body{
 }
 
 .menu{
+  border-top: 2px solid currentColor;
   background: #e85e2c
     linear-gradient(
       to bottom,
@@ -98,15 +100,21 @@ body{
       #e85e2c 70%,
       #ef9126 100%
     );
+    border-radius:0 0 5px 5px;
+    display: flow-root;
+    padding-left: 230px;
 }
 
-background-color -> 배경색
-background-image -> 배경 이미지
-background-repeat -> 배경 이미지 반복
-background-position -> 배경 이미지 위치
-background-attachment -> 배경 이미지 고정 여부
-background-size -> 배경 이미지 크기 조정
+.menu-item{
+  background-color:aqua;
+  float:left;
+}
 
+.sub-menu{
+  background-color:pink;
+  position:absolute;
+  display:none;
+}
 
 /* 비주얼 */
 .visual{
