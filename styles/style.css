@@ -1,6 +1,13 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+  background-color: yellow;
+  position:absolute;
+  top:-10000px;
+}
+
 /* 기본 스타일 */
 *, *::before, *::after{
   box-sizing:border-box;
@@ -32,7 +39,6 @@ body{
 .header{
   background:#fff;    
   padding:0 30px;
-  height:15vh;
   border-radius: 0 0 15px 15px;
   position:relative;
 }
