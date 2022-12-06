@@ -46,7 +46,6 @@ body{
 
 /* 텍스트 링크 모음 */
 .member{
-  background-color:aqua;
   text-align: right;
   padding:4px 0;
   /* position 속성을 이용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기*/
@@ -62,9 +61,9 @@ body{
 }
 
 .member a{
-  background-color:coral;
   padding:6px 10px;
   display: inherit;
+  text-transform: uppercase;
 }
 
 /* 마지막 li 요소에 포함된 a 요소를 선택하여 오른쪽 padding 값을 0으로 재정의 하는 방법 */
