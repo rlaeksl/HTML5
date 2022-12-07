@@ -104,12 +104,17 @@ body{
     display: flow-root;
     padding-left: 230px;
     height:47px;
+    position:relative;
 }
+
+.menu > li:nth-child(-n+3){
+  position:relative;
+}
+
 
 .menu-item{
   float:left;
   border-left:2px solid #fff;
-  position:relative;
 }
 
 /* 구체성 점수 */
@@ -139,17 +144,30 @@ body{
   background-color:pink;
   position:absolute;
   display:none;
-  left:0px;
   top: 47x;
+}
+
+.menu-html,
+.menu-css,
+.menu-standards {
+  left: 0;
+}
+
+.menu-accessibility,
+.meun-qna,
+.menu-archive {
+  right: 0;
 }
 
 .is-active .sub-menu{
   display:block;
+  white-space:nowrap;
 }
 
 .sub-menu li{
   display: inline-block;
   padding-left: 1em;
+  background-color:gold;
 }
 
 /* 비주얼 */
