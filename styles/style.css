@@ -134,6 +134,7 @@ body{
   position:absolute;
   top: 47px;
   display:none;
+  padding:4px 0;
 }
 
 .menu-html,
@@ -181,7 +182,7 @@ body{
 
 .sub-menu a{
   display: inline-block;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .sub-menu a:hover, .sub-menu a:focus{
