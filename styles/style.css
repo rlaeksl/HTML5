@@ -52,6 +52,7 @@ body{
   position:absolute;
   top: 45px;
   left:60px;
+  z-index:10;
 }
 
 /* 텍스트 링크 모음 */
@@ -144,7 +145,6 @@ body{
   background-color:pink;
   position:absolute;
   display:none;
-  top: 47x;
 }
 
 .menu-html,
@@ -154,7 +154,7 @@ body{
 }
 
 .menu-accessibility,
-.meun-qna,
+.menu-qna,
 .menu-archive {
   right: 0;
 }
