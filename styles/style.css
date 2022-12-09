@@ -301,7 +301,7 @@ body{
 }
 
 .login-title{
-  color: yellow;
+  color: #ff0;
   font-size: 15px;
   font-weight: 700;
   text-indent: 10px;
@@ -315,8 +315,9 @@ body{
 }
 
 .login fieldset{
-  display: flow-root;
   position: relative;
+  border-bottom:1px solid #aaa;
+  padding-bottom: 5px;
 }
 
 .user-email, .user-pw{
@@ -326,42 +327,49 @@ body{
 .login-form label{
   display:inline-block;
   width: 4em;
-  background-color: salmon;
 }
 
 .login-form input{
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
-  text-indent: 3px;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
 }
 
 .login-button{
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 53px;
   background: orangered;
   color: #fff;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
+  padding: 0 8px;
+  font-size: 13px;
 }
 
 .sign{
-  display: flex;
   background: #fff;
   border-radius: 0 0 5px 5px;
-  padding: 0 10px 10px 10px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  border-top: 1px solid gray;
+}
+
+.sign a{
+  display: block;
+  padding: 6px 0;
+  letter-spacing: -1px;
 }
 
 .sign a::before{
-  content:"\e803";
+  content:"\e804";
   font-family: "fontello";
   color: orangered;
-  font-size: 10px;
-  margin-right: 3px;
+  margin-right: 8px;
 }
 
 /* 슬로건 */
