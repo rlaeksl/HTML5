@@ -3,7 +3,7 @@
 @import url(./fonts.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
   position:absolute;
   width:1px;
   height:1px;
@@ -294,20 +294,74 @@ body{
 
 /* 로그인 영역 */
 .login{
-  background: radial-gradient(circle at right top, orange, orangered);
+  background: orange radial-gradient(circle at right top, orange, orangered);
   box-shadow: 5px 5px 0 0 #ccc;
   padding: 10px;
   border-radius: 5px;
 }
 
+.login-title{
+  color: yellow;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
 .login-form{
   background: #fff;
-  border-radius: 7px;
-  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+}
+
+.login fieldset{
+  display: flow-root;
+  position: relative;
 }
 
 .user-email, .user-pw{
-  float: left;
+  margin-bottom: 5px;
+}
+
+.login-form label{
+  display:inline-block;
+  width: 4em;
+  background-color: salmon;
+}
+
+.login-form input{
+  width: 90px;
+  height: 24px;
+  border: 1px solid #aaa;
+  text-indent: 3px;
+}
+
+.login-button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+}
+
+.sign{
+  display: flex;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 10px;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+.sign a::before{
+  content:"\e803";
+  font-family: "fontello";
+  color: orangered;
+  font-size: 10px;
+  margin-right: 3px;
 }
 
 /* 슬로건 */
