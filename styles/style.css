@@ -648,16 +648,23 @@ body {
 .event{
   border-bottom: 1px solid #aaa;
   position: relative;
+  border-top: 1px solid transparent;
+}
+
+.event-title{
+  display:inline-block;
 }
 
 .event-button-wrapper{
-  background-color: yellow;
   height: 20px;
   overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* IR 기법 -> Image Replacement */
@@ -682,6 +689,11 @@ body {
   margin: 10px 0;
 }
 
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
 .event-brief{
   line-height: 1.5;
 }
@@ -692,7 +704,38 @@ body {
 
 .related-list{
   background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
   margin-top: 10px;
+  line-height:1.8;
+  height:27px;
+  overflow:hidden;
+  padding:0;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+}
+
+.related-list li{
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;;
+  padding:0 5px;
+  background-color: yellow;
+  transform: none;
+}
+
+.related-list:hover li, .related-list:focus li{
+  transform: translateY(10px);
+}
+
+.related-list a{
+  flex-grow:1;
+  padding: 0 10px;
+}
+
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding: 10px 0;
 }
 
 
